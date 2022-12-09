@@ -16,11 +16,12 @@ class Tin extends Model
     protected $fillable = [
         'loai_tin',
         'id',
-        'username',
+        'user_name',
         'tieu_de',
+        'thoi_gian',
         'noi_dung',
         'file',
-        'lienlac',
+        'lien_lac',
         'report',
         'nguoi_dung_id'
     ];

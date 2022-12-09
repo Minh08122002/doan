@@ -44,24 +44,8 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-            <li class="nav-item">
-                <a href="home" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Quản Lí Bài Đăng</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Duyệt Bài Đăng</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="listuser" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Quản Lí Người Dùng</p>
-                </a>
-              </li>
+            
+              
               <li class="nav-item">
                 <a href="list" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -77,8 +61,46 @@
               
             </ul>
           </li>
-          
-          
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-alt"></i>
+              <p>
+               Người Dùng
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="listuser" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Quản Lí Người Dùng</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+               Bài Đăng
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="listpost" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Quản Lí Bài Đăng</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Duyệt Bài Đăng</p>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

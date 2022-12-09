@@ -15,7 +15,7 @@ class QuanlibaidangController extends Controller
     public function index()
     {
         $dsTin= Tin::all();
-        return view('home', compact('dsTin'));
+        return view('listpost', compact('dsTin'));
     }
 
     /**
@@ -81,6 +81,10 @@ class QuanlibaidangController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $xoa=Tin::where('id',$id)->delete();
+     
+ 
+    
+        return redirect()->route('listpost');
     }
 }

@@ -60,6 +60,6 @@ class MenuController extends Controller
        return response()->json([
            'error' => true
        ]);
-       //cc
+       
    }
 }

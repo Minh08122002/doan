@@ -3,21 +3,26 @@
 <html lang="en">
 <head>
  @include('head')
+ @if (session('message'))
+ <span class ="aler alert-danger">
+<strong> {{session('message')}}</strong>
+ </span>
+ @endif
+
 </head>
-<body class="hold-transition login-page" >
-<div style="background-image: url('/image/background.png');">
+<body class="hold-transition login-page">
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
-      <a href="template/index2.html" class="h1"><b>Tìm Đồ</b>Thất Lạc</a>
+      <a href="template/index2.html" class="h1"><b>Tìm Đồ Thất Lạc</b></a>
     </div>
     <div class="card-body">
       <p class="login-box-msg">Đăng Nhập Để Bắt Đầu</p>
 @include('alert')
-      <form action="login/store" method="post">
+      <form action="{{ route('/')}}" method="post">
         <div class="input-group mb-3">
-          <input type="email" name ="email"  class="form-control" placeholder="Email">
+          <input type="text" name ="username"  class="form-control" placeholder="Username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -35,9 +40,9 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" name="remember" id="remember">
-              <label for="remember">
-                Remember Me
+            <label >
+              <input type="checkbox" name="remember" >
+                Remember
               </label>
             </div>
           </div>
@@ -53,16 +58,20 @@
       
       <!-- /.social-auth-links -->
 
-     
+      <p class="mb-1">
+        <a href="forgot-password.html">Quên Mật Khẩu</a>
+      </p>
+      <p class="mb-0">
+        <a href="{{ route('form-them-moi-tai-khoan')}}" class="text-center">Đăng kí tài khoản</a>
+      </p>
     </div>
     <!-- /.card-body -->
   </div>
   <!-- /.card -->
 </div>
-</div>
 <!-- /.login-box -->
 
 <!-- jQuery -->
-
+@include('footer')
 </body>
 </html>
