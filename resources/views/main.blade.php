@@ -45,7 +45,8 @@
             <!-- jquery validation -->
             <div class="card card-primary mt-3">
               <div class="card-header">
-                <h3 class="card-title">Trang Quản Trị</h3>
+                <h3 class="card-title"></h3>  
+                
               </div>
                @yield('content')
 

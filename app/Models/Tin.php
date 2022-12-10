@@ -12,18 +12,18 @@ class Tin extends Model
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = 'table_tin';
+    
     protected $fillable = [
         'loai_tin',
         'id',
-        'user_name',
+        'username',
         'tieu_de',
-        'thoi_gian',
         'noi_dung',
         'file',
-        'lien_lac',
+        'lienlac',
         'report',
-        'nguoi_dung_id'
+        'nguoi_dung_id',
+        'tinh_thanh_pho'
     ];
 
 

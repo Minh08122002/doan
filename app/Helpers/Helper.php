@@ -18,8 +18,7 @@ class Helper
                 <a class="btn btn-primary btn-sm" href="/menus/edit/' . $menu->id . '">
                     <i class="fas fa-edit"></i>
                 </a>
-                <a class="btn btn-danger btn-sm" href="#"
-                onclick="removeRow(' . $menu->id . ',\'/menus/destroy\')">
+                <a class="btn btn-danger btn-sm" href="#" onclick="removeRow(' . $menu->id . ',\'/menus/destroy\')">
                     <i class="fas fa-trash"></i>
                 </a>
                 </td>

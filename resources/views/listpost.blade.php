@@ -7,7 +7,7 @@
                     <div class="post">
                     @foreach($dsTin as $Tin)
                       <div class="user-block">
-                        <img class="img-circle img-bordered-sm" src="../../dist/img/user1-128x128.jpg" alt="">
+                        <img class="img-circle img-bordered-sm" src="{{asset('image/'. $Tin->file)}}" alt="">
                         <span class="username">
                           <a href="#">{{ $Tin->user_name }}</a>
                           <a class="btn btn-danger btn-sm float-right " href="{{route('listpost_xoa',['id'=>$Tin->id])}}"
